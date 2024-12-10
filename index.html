@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+  <header class="alert alert-dark">
+    <h1>Dashboard Financeiro</h1>    
+  </header>
+
+  <div class="container mt-4">
+    <!-- Aportes por Categoria -->
+    <section id="investments">
+      <h2 class="text-success">Aportes por Categoria</h2>
+      <div id="investmentInputs" class="row">
+        <div class="col-md-4 mb-3">
+          <label>Renda Fixa</label>
+          <input type="text" class="form-control" id="rendaFixaInput" placeholder="Aporte em Renda Fixa">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>FIIs</label>
+          <input type="text" class="form-control" id="fiisInput" placeholder="Aporte em FIIs">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Ações</label>
+          <input type="text" class="form-control" id="acoesInput" placeholder="Aporte em Ações">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>ETFs</label>
+          <input type="text" class="form-control" id="etfsInput" placeholder="Aporte em ETFs">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Criptomoedas</label>
+          <input type="text" class="form-control" id="criptomoedasInput" placeholder="Aporte em Criptomoedas">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Tesouro</label>
+          <input type="text" class="form-control" id="tesouroInput" placeholder="Aporte em Tesouro">
+        </div>
+        <!-- Novo campo para selecionar o ano -->
+        <div class="col-md-4 mb-3">
+          
+        </div>
+      </div>
+      <button class="btn btn-secondary w-100" onclick="addInvestments()">Adicionar Aportes</button>
+    </section>
+
+    <!-- Gráfico de Aportes (Gráfico de Barras) -->
+    <section class="mt-5">
+      <h2 class="text-info">Gráfico de Aportes</h2>
+      <canvas id="investmentBarChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Gráfico de Barras Horizontais -->
+    <section class="mt-5">
+      <h2 class="text-info">Gráfico de Patrimônio por Ano</h2>
+      <canvas id="investmentHorizontalBarChart" width="2000" height="400"></canvas>
+    </section>
+
+    <!-- Exibição do Histórico de Aportes -->
+<section id="aportes-exibidos" class="mt-4">
+  <h2 class="text-primary">Histórico de Aportes</h2>
+  <ul id="investmentHistoryList" class="list-group">
+    <!-- O histórico será exibido aqui -->
+  </ul>
+</section>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+/* Fonte e Estilo Básico */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    background-color: #404142;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulários e Listas */
+  form input, form button {
+    margin: 5px 0;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  
+  /* Barra de Progresso */
+  .progress {
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Botões */
+  .remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Gráficos */
+  canvas {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  
